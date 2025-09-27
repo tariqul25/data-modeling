@@ -1,6 +1,9 @@
 import express, { type Application, type Request, type Response } from "express";
 import cors from 'cors';
 import { CourseRoutes } from "./app/models/course/course.route.js";
+import { MentorRoutes } from "./app/models/mentor/mentor.route.js";
+import { StudentRoutes } from "./app/models/student/student.route.js";
+import { ReviewRoutes } from "./app/models/review/review.route.js";
 
 import { MentorRoutes } from "./app/models/mentor/mentor.route.js";
 import { StudentRoutes } from "./app/models/student/student.route.js";
