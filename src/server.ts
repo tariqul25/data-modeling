@@ -20,10 +20,10 @@ async function main() {
     }
 
     await mongoose.connect(mongouri);
-    console.log("✅ MongoDB connected successfully");
+    console.log(" MongoDB connected successfully");
 
     app.listen(port, () => {
-      console.log(`🚀 Server running at http://localhost:${port}`);
+      console.log(` Server running at http://localhost:${port}`);
     });
   } catch (error) {
     console.error(" Error connecting to MongoDB or starting server:", error);
