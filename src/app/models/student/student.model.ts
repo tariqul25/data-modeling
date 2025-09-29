@@ -2,7 +2,6 @@ import { model, Schema } from "mongoose";
 import { IStudent } from "./student.interface.js";
 
 const studentSchema = new Schema<IStudent>({
-  _id: { type: Schema.Types.ObjectId, required: true },
   id: { type: String, required: true },
   name: { type: String, required: true },
   gender: { type: String, enum: ["male", "female", "other"], required: true },

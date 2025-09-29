@@ -3,7 +3,7 @@ import { CourseController } from "./course.controller.js";
 
 const router = express.Router();
 
-router.post("/course-create", CourseController.CreateCourseController); 
+router.post("/create-course", CourseController.CreateCourseController); 
 router.get("/", CourseController.GetAllCourseController); 
 router.get("/:id", CourseController.GetACourseController); 
 

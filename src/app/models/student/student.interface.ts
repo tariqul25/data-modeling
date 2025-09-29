@@ -1,7 +1,6 @@
 import { Types } from "mongoose";
 
 export interface IStudent {
-  _id: Types.ObjectId;
   id: string;
   name: string;
   gender: 'male' | 'female' | 'other';
