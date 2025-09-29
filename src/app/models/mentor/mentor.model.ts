@@ -25,10 +25,6 @@ const mentorSchema = new Schema<IMentor>(
     lifeJourney: { type: String, required: true },
     createdAt: { type: Date, required: true, default: Date.now },
     updatedAt: { type: Date, required: true, default: Date.now },
-  },
-  {
-    timestamps: true,
-    _id: false, 
   }
 );
 

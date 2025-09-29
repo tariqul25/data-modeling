@@ -15,10 +15,10 @@ const app: Application = express()
 app.use(express.json());
 app.use(cors());
 
-app.use("api/courses", CourseRoutes)
-app.use("api/mentors", MentorRoutes)
-app.use("api/students", StudentRoutes)
-app.use("api/reviews", ReviewRoutes)
+app.use("/api/courses", CourseRoutes)
+app.use("/api/mentors", MentorRoutes)
+app.use("/api/students", StudentRoutes)
+app.use("/api/reviews", ReviewRoutes)
 
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
